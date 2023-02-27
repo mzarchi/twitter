@@ -4,7 +4,7 @@ import time
 
 api = cf.api()
 
-tweet_id = "1628810393974964224"
+tweet_id = "1628831531182575616"
 tweet_data = api.get_status(id=tweet_id)
 print(f"Tweet-id: {tweet_id}, Author: {tweet_data.user.screen_name}")
 repeat = False
