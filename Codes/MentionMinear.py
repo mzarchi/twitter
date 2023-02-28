@@ -4,7 +4,7 @@ import time
 
 api = cf.api()
 
-tweet_id = "1628831531182575616"
+tweet_id = "20"
 tweet_data = api.get_status(id=tweet_id)
 print(f"Tweet-id: {tweet_id}, Author: {tweet_data.user.screen_name}")
 repeat = False
@@ -27,5 +27,4 @@ for tweet in tweepy.Cursor(
         f.write(line + "\n")
         print(line)
         counter += 1
-    time.sleep(1)
 f.close()
