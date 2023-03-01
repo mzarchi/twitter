@@ -1,6 +1,5 @@
 import config as cf
 import tweepy
-import time
 
 api = cf.api()
 
