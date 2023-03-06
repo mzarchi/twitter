@@ -1,6 +1,8 @@
 # rename file to config.py
 import tweepy
 
+telegram_bot = "*****" # Telegram bot token
+
 
 def api():
     cf = {
