@@ -2,15 +2,15 @@ import config as cf
 import requests
 
 
-def runapi(**p):
+def runapi(chat_id, text):
 
     apiURL = f'https://api.telegram.org/bot{cf.telegram_bot}/sendMessage'
 
     try:
         response = requests.post(
             apiURL, json={
-                'chat_id': p['chat_id'],
-                'text': p['text'],
+                'chat_id': chat_id,
+                'text': text,
                 'parse_mode': "html",
                 'disable_web_page_preview': True
             }
@@ -20,5 +20,5 @@ def runapi(**p):
         return e
 
 
-def sendMessage(**p):
-    return runapi(p)
+def send_message(**p):
+    return runapi(p['chat_id'], p['text'])
