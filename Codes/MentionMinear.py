@@ -3,7 +3,7 @@ import tweepy
 
 api = cf.api()
 
-tweet_id = "20"
+tweet_id = "1631968588306235393"
 tweet_data = api.get_status(id=tweet_id)
 print(f"Tweet-id: {tweet_id}, Author: {tweet_data.user.screen_name}")
 repeat = False
